@@ -12,7 +12,7 @@
             @foreach ($data as $item)
                 <tr>
                     <th scope="row">{{ $loop->iteration }}</th>
-                    <td>{{ $item }}</td>
+                    <td>{{ $item }}</td> 
                 </tr>
             @endforeach
         </tbody>

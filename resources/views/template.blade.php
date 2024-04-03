@@ -109,6 +109,7 @@
             </div>
             <div id="layoutSidenav_content">
                 <div class="container-fluid">
+                    @include('flashmessage')
                     @yield('main')
                 </div>
                 <footer class="py-4 bg-light mt-auto">
