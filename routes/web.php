@@ -16,6 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('coba', function () {
+    return view('coba');
+});
 
 Route::get('hello', function () {
     return 'ini laravel saya';
@@ -44,3 +47,12 @@ Route::get('bagi/{nilai}/{nilai2}', function ($nilai, $nilai2) {
 // Route::post('users/{id}', function ($id) {});
 // Route::put('users/{id}', function ($id) {});
 // Route::delete('users/{id}', function ($id) {});
+
+Route::get('template', function () {
+    return view('template');
+});
+
+Route::get('tabel', function () {
+    $data = ['meja', 'kursi', 'lampu', 'pensil', 'buku']; 
+    return view('table', compact('data'));
+});
