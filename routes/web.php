@@ -62,4 +62,5 @@ Route::get('tabel', function () {
 // Route::get('tambahsiswa', [SiswaController::class, 'create']);
 // Route::get('tampilsiswa', [SiswaController::class, 'show']);
 // Route::get('tampilsiswa', [SiswaController::class, 'show']);
+
 Route::resource('siswa', SiswaController::class);
