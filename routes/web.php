@@ -47,7 +47,7 @@ Route::get('bagi/{nilai}/{nilai2}', function ($nilai, $nilai2) {
 });
 
 // Route::post('users/{id}', function ($id) {});
-// Route::put('users/{id}', function ($id) {}); 
+// Route::put('users/{id}', function ($id) {});
 // Route::delete('users/{id}', function ($id) {});
 
 Route::get('template', function () {
@@ -55,7 +55,7 @@ Route::get('template', function () {
 });
 
 Route::get('tabel', function () {
-    $data = ['meja', 'kursi', 'lampu', 'pensil', 'buku', 'pulpen']; 
+    $data = ['meja', 'kursi', 'lampu', 'pensil', 'buku', 'pulpen'];
     return view('table', compact('data'));
 });
 
